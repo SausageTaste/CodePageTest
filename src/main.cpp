@@ -218,7 +218,7 @@ int main() {
     system("chcp 65001 > nul");
 
     const fs::path repo_root = ::find_repo_root();
-    const fs::path file_path = repo_root / "unicode.txt";
+    const fs::path file_path = repo_root / "data" / "unicode.txt";
     const std::string file_contents = ::read_file(file_path);
 
     for (const CodePageEntry& cp : CODE_PAGES) {
