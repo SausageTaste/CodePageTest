@@ -75,7 +75,7 @@ get_current_oemcp(void)
 
 ### Execution result
 
-```
+```java
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
 [SUNG] `opt_sconv` is NULL
 [SUNG] (ACP) Found codepage '949' from locale 'English_VIR.949'
@@ -121,7 +121,7 @@ CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
 
 ### Execution result
 
-```
+```java
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
 [SUNG] `opt_sconv` is NULL
 [SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
@@ -167,7 +167,7 @@ CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
 
 ### Execution result
 
-```
+```java
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
 [SUNG] `opt_sconv` is NULL
 [SUNG] (ACP) Found codepage '1252' from locale 'Korean_Korea.1252'
@@ -207,7 +207,7 @@ CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
 
 ### Execution result
 
-```
+```java
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
 [SUNG] `opt_sconv` is NULL
 [SUNG] (ACP) Found codepage '1252' from locale 'English_world.1252'
