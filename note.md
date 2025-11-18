@@ -60,9 +60,10 @@ get_current_oemcp(void)
 
 ### Case 1
 
-* English UI
-* Korean system locale
 * My office PC
+	* 🇺🇸 as device setup region
+* 🇺🇸 display language
+* 🇰🇷 system locale
 
 ```bash
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
@@ -92,4 +93,99 @@ CMake Error: Problem with archive_write_header(): Invalid empty pathname
 [SUNG] `sc` is NULL, using current codepage 949
 CMake Error: Current file:
 CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
+```
+
+### Case 2
+
+* My office PC
+* 🇰🇷 display language
+* 🇰🇷 system locale
+
+```bash
+D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] (OEMCP) Found OEM locale match: Korean_Korea
+[SUNG] Current code page is '949', OEMCP is '949', Charset is ''
+[SUNG] Current code page equals to OEMCP, no conversion
+[SUNG] `sconv_default` is NULL
+[SUNG] `sconv` is still NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+x archive/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is still NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+x
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+CMake Error: Current file:
+CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
+```
+
+### Case 3
+
+* My office PC
+* 🇰🇷 display language
+* 🇺🇸 system locale
+
+```bash
+D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '1252' from locale 'Korean_Korea.1252'
+[SUNG] (OEMCP) Found OEM locale match: 'Korean_Korea', '949'
+[SUNG] Current code page is '1252', OEMCP is '949', Charset is ''
+[SUNG] OEMCP: CP949
+[SUNG] `sconv_default` initialized
+[SUNG] `sconv` is set
+[SUNG] sc is (949 -> 1252), using 949
+[SUNG] sc is (949 -> 1252), using 949
+[SUNG] sc is (949 -> 1252), using 949
+x archive/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (949 -> 1252), using 949
+[SUNG] sc is (949 -> 1252), using 949
+[SUNG] sc is (949 -> 1252), using 949
+x
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+CMake Error: Current file:
+CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
+```
+
+#### Case 4
+
+* My office PC
+* 🇺🇸 display language
+* 🇺🇸 system locale
+
+```bash
+D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '1252' from locale 'English_world.1252'
+[SUNG] (OEMCP) No OEM locale match found for 'English_world.1252', using `GetOEMCP()` '437'
+[SUNG] Current code page is '1252', OEMCP is '437', Charset is ''
+[SUNG] OEMCP: CP437
+[SUNG] `sconv_default` initialized
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 1252), using 437
+[SUNG] sc is (437 -> 1252), using 437
+[SUNG] sc is (437 -> 1252), using 437
+x archive/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 1252), using 437
+[SUNG] sc is (437 -> 1252), using 437
+[SUNG] sc is (437 -> 1252), using 437
+x archive/φÿ╕φÿ╕φÖï.txt
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
 ```
