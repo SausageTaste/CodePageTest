@@ -58,12 +58,22 @@ get_current_oemcp(void)
 
 # Some results
 
-### Case 1
+## Case 1
+
+### Configs
 
 * My office PC
 	* 🇺🇸 as device setup region
 * 🇺🇸 display language
 * 🇰🇷 system locale
+
+### Summary
+
+* OEM `949`
+* Current `949`
+* Used `949` and failed
+
+### Execution result
 
 ```bash
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
@@ -95,11 +105,21 @@ CMake Error: Current file:
 CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
 ```
 
-### Case 2
+## Case 2
+
+### Configs
 
 * My office PC
 * 🇰🇷 display language
 * 🇰🇷 system locale
+
+### Summary
+
+* OEM `949`
+* Current `949`
+* Used `949` and failed
+
+### Execution result
 
 ```bash
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
@@ -131,11 +151,21 @@ CMake Error: Current file:
 CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
 ```
 
-### Case 3
+## Case 3
+
+### Configs
 
 * My office PC
 * 🇰🇷 display language
 * 🇺🇸 system locale
+
+### Summary
+
+* OEM `949`
+* Current `1252`
+* Used `949` and failed
+
+### Execution result
 
 ```bash
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
@@ -161,11 +191,21 @@ CMake Error: Current file:
 CMake Error: Problem extracting tar: D:\GitHub\CodePageTest\data\archive.tar.gz
 ```
 
-#### Case 4
+## Case 4
+
+### Configs
 
 * My office PC
 * 🇺🇸 display language
 * 🇺🇸 system locale
+
+### Summary
+
+* OEM `437`
+* Current `1252`
+* Used `437` and success
+
+### Execution result
 
 ```bash
 D:\GitHub\cmake\build\bin>"D:/GitHub/cmake/build/bin/cmake.exe" -E tar xv "D:\GitHub\CodePageTest\data\archive.tar.gz"
