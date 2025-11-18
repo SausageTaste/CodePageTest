@@ -229,3 +229,49 @@ x archive/φÿ╕φÿ╕φÖï.txt
 [SUNG] `opt_sconv` is NULL
 [SUNG] `sconv` is set
 ```
+
+## Case 5
+
+### Configs
+
+* PC bang
+* 🇰🇷 display language
+* 🇰🇷 system locale
+
+### Summary
+
+* OEM `949`
+* Current `949`
+* Used `949` and success
+
+### Execution result
+
+```
+C:\Users\Administrator\Downloads\CodePageTest-main>"./cmake" -E tar xv "./data/archive.tar.gz"
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] (OEMCP) Found OEM locale match: 'Korean_Korea', '949'
+[SUNG] Current code page is '949', OEMCP is '949', Charset is ''
+[SUNG] Current code page equals to OEMCP, no conversion
+[SUNG] `sconv_default` is NULL
+[SUNG] `sconv` is still NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+x archive/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is still NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+x
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+CMake Error: Current file:
+CMake Error: Problem extracting tar: ./data/archive.tar.gz
+```
