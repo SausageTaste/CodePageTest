@@ -242,7 +242,7 @@ x archive/φÿ╕φÿ╕φÖï.txt
 
 * OEM `949`
 * Current `949`
-* Used `949` and success
+* Used `949` and failed
 
 ### Execution result
 
