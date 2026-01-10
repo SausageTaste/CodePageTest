@@ -1,0 +1,45 @@
+a--------------------------------------------------------------------------------
+cmake version 4.2.0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+x utf-8-paths/
+x
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+CMake Error: Current file:
+CMake Error: Problem extracting tar: C:\Users\woos8\Documents\GitHub\CodePageTest\data\utf-8-paths.tar.gz
+Result: 1
+--------------------------------------------------------------------------------
+bsdtar 3.8.2 - libarchive 3.8.2 zlib/1.2.13.1-motley liblzma/5.4.3 bz2lib/1.0.8 libzstd/1.5.5 cng/2.0 libb2/bundled
+x utf-8-paths/
+tar: Archive entry has empty or unreadable filename ... skipping.
+tar: Archive entry has empty or unreadable filename ... skipping.
+tar: Archive entry has empty or unreadable filename ... skipping.
+tar: Archive entry has empty or unreadable filename ... skipping.
+x utf-8-paths/chinese-雍?蝨?.txt
+tar: Error exit delayed from previous errors.
+Result: 1
+--------------------------------------------------------------------------------
+cmake version 4.2.1-g5db84c0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Japanese_Japan.949'
+[SUNG] (OEMCP) Found OEM locale match: 'Japanese_Japan', '932'
+[SUNG] Current code page is '949', OEMCP is '932', Charset is ''
+[SUNG] OEMCP: CP932
+[SUNG] `sconv_default` initialized
+[SUNG] `sconv` is set
+[SUNG] sc is (932 -> 949), using 932
+[SUNG] sc is (932 -> 949), using 932
+[SUNG] sc is (932 -> 949), using 932
+x utf-8-paths/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (932 -> 949), using 932
+[SUNG] sc is (932 -> 949), using 932
+[SUNG] sc is (932 -> 949), using 932
+x
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+CMake Error: Current file:
+CMake Error: Problem extracting tar: C:\Users\woos8\Documents\GitHub\CodePageTest\data\utf-8-paths.tar.gz
+Result: 1
