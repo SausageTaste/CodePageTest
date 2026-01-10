@@ -1,3 +1,6 @@
 [submodule "submodules/cmake"]
 	path = submodules/cmake
 	url = https://gitlab.kitware.com/SausageTaste/cmake
+[submodule "submodules/tar"]
+	path = submodules/tar
+	url = https://git.savannah.gnu.org/git/tar.git
