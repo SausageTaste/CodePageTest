@@ -1,0 +1,3 @@
+[submodule "submodules/cmake"]
+	path = submodules/cmake
+	url = https://gitlab.kitware.com/SausageTaste/cmake

@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.11)
 project(CodePageTest)
 
 
+add_subdirectory(submodules/cmake)
+
+
 add_executable(${PROJECT_NAME})
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_23)
 
