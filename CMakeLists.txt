@@ -4,6 +4,7 @@ project(CodePageTest)
 
 
 add_subdirectory(submodules/cmake)
+add_subdirectory(submodules/libarchive)
 
 
 add_executable(${PROJECT_NAME})
