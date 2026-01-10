@@ -1,0 +1,70 @@
+Microsoft Windows [Version 10.0.26200.7462]
+
+--------------------------------------------------------------------------------
+cmake version 4.2.0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+x utf-8-paths/
+x utf-8-paths/japanese-πâåπé»πé╣πâüπâú.txt
+x utf-8-paths/arabic-┘å┘Ä╪│┘É┘è╪¼.txt
+x utf-8-paths/korean-∞í░∞ºü.txt
+x utf-8-paths/hungarian-h┼▒t┼æ.txt
+x utf-8-paths/chinese-Φ┤¿σ£░.txt
+Result: 0
+--------------------------------------------------------------------------------
+bsdtar 3.8.2 - libarchive 3.8.2 zlib/1.2.13.1-motley liblzma/5.4.3 bz2lib/1.0.8 libzstd/1.5.5 cng/2.0 libb2/bundled
+x utf-8-paths/
+x utf-8-paths/japanese-πaaπe\241\355πe?πauπau.txt
+x utf-8-paths/arabic-\246\245a\246\245A?\246\242\246\245E\246\245e?¼.txt
+x utf-8-paths/korean-\241\304i?\241\304ºu.txt
+x utf-8-paths/hungarian-h\246\253\242\306t\246\253æ.txt
+x utf-8-paths/chinese-Φ\246\251¿σ\241\314?.txt
+Result: 0
+--------------------------------------------------------------------------------
+cmake version 4.2.1-g5db84c0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '949' from locale 'English_United States.949'
+[SUNG] (OEMCP) Found OEM locale match: 'English_United States', '437'
+[SUNG] Current code page is '949', OEMCP is '437', Charset is ''
+[SUNG] OEMCP: CP437
+[SUNG] `sconv_default` initialized
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+x utf-8-paths/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+x utf-8-paths/japanese-πâåπé»πé╣πâüπâú.txt
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+x utf-8-paths/arabic-┘å┘Ä╪│┘É┘è╪¼.txt
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+x utf-8-paths/korean-∞í░∞ºü.txt
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+x utf-8-paths/hungarian-h┼▒t┼æ.txt
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+[SUNG] sc is (437 -> 949), using 437
+x utf-8-paths/chinese-Φ┤¿σ£░.txt
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is set
+Result: 0
