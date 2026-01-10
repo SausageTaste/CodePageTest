@@ -1,0 +1,51 @@
+--------------------------------------------------------------------------------
+cmake version 4.2.0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+x utf-8-paths/
+x
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+CMake Error: Current file:
+CMake Error: Problem extracting tar: C:\Users\woos8\Documents\GitHub\CodePageTest\data\utf-8-paths.tar.gz
+Result: 1
+--------------------------------------------------------------------------------
+bsdtar 3.8.2 - libarchive 3.8.2 zlib/1.2.13.1-motley liblzma/5.4.3 bz2lib/1.0.8 libzstd/1.5.5 cng/2.0 libb2/bundled
+x utf-8-paths/
+x utf-8-paths/japanese-?녴궚?밤긽??txt: Invalid empty pathname: Unknown error
+x utf-8-paths/arabic-??卍??寞.txt: Invalid empty pathname: Unknown error
+x utf-8-paths/korean-議곗쭅.txt
+x utf-8-paths/hungarian-h킥t흷.txt
+x utf-8-paths/chinese-兀\250\345쑑.txt
+tar: Error exit delayed from previous errors.
+Result: 1
+--------------------------------------------------------------------------------
+cmake version 4.2.1-g5db84c0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[SUNG] `opt_sconv` is NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] (OEMCP) Found OEM locale match: 'Korean_Korea', '949'
+[SUNG] Current code page is '949', OEMCP is '949', Charset is ''
+[SUNG] Current code page equals to OEMCP, no conversion
+[SUNG] `sconv_default` is NULL
+[SUNG] `sconv` is still NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+x utf-8-paths/
+[SUNG] `opt_sconv` is NULL
+[SUNG] `sconv` is still NULL
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+x
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+CMake Error: Problem with archive_write_header(): Invalid empty pathname
+[SUNG] (ACP) Found codepage '949' from locale 'Korean_Korea.949'
+[SUNG] `sc` is NULL, using current codepage 949
+CMake Error: Current file:
+CMake Error: Problem extracting tar: C:\Users\woos8\Documents\GitHub\CodePageTest\data\utf-8-paths.tar.gz
+Result: 1
