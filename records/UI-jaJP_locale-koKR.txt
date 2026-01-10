@@ -1,4 +1,6 @@
-a--------------------------------------------------------------------------------
+Microsoft Windows [Version 10.0.26200.7462]
+
+--------------------------------------------------------------------------------
 cmake version 4.2.0
 
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
